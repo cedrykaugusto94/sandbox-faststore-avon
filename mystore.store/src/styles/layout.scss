@@ -17,6 +17,43 @@ main {
   .page__section-content {
     min-height: 21.06rem;
 
+    .product-card {
+      position: relative;
+      text-align: center;
+      background-color: var(--color-neutral-2);
+
+      &:hover {
+        background-color: var(--color-neutral-2);
+        box-shadow: none;
+
+        .gatsby-image-wrapper {
+          transition: all .275s cubic-bezier(0,0,.2,1);
+          transform: perspective(1px) translateZ(0) scale(.9);
+        }
+
+        button {
+          background-color: var(--color-pink);
+          border-color: var(--color-pink);
+        }
+      }
+
+      button {
+        background-color: var(--color-neutral-2);
+        border-radius: rem(20px);
+        color: var(--color-black-transparent-0);
+        border: rem(1px) solid #e5e5e5;
+        min-height: var(--space-6);
+      }
+    }
+
+    .badge {
+      background-color: transparent;
+      border: rem(1px) solid var(--color-green);
+      color: var(--color-green);
+      position: absolute;
+      top: rem(10px);
+    }
+
     @include media(">=notebook") {
       margin-top: calc(-1 * var(--space-0));
       margin-bottom: calc(-1 * var(--space-3));

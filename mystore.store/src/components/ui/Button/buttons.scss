@@ -70,15 +70,11 @@
   }
 
   &[data-button-variant="tertiary"] {
-    color: var(--color-link);
-    background-color: var(--bg-neutral-lightest);
+    background-color: var(--color-pink);
+    color: var(--color-neutral-0);
+    min-height: auto;
 
-    &:hover, &:focus { background-color: var(--bg-secondary-light); }
-
-    &:active {
-      color: var(--color-text-display);
-      background-color: var(--color-secondary-1);
-    }
+    &:hover, &:focus { background-color: var(--color-pink-mid); }
 
     &[data-button-inverse] {
       color: var(--color-text-display);

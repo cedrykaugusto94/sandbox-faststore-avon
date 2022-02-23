@@ -31,7 +31,7 @@
     @media (hover: hover) {
       &:hover {
         outline: none;
-        box-shadow: var(--box-shadow-dark);
+        // box-shadow: var(--box-shadow-dark);
 
         img {
           transform: scale(1.03);

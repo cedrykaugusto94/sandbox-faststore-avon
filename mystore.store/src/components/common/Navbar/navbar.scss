@@ -1,9 +1,9 @@
 @import "../../../styles/vendors/include-media";
+@import "../../../styles/utilities.scss";
 
 .navbar {
   padding: 0;
-  border-bottom: var(--border-width-0) solid var(--color-neutral-2);
-  box-shadow: 0 var(--space-0) var(--space-3) var(--color-black-transparent-5);
+  position: fixed;
 
   [data-store-search-input] {
     flex: 1 0 100%;
@@ -17,10 +17,13 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  max-width: 94%;
+  margin: 0 auto;
 
   @include media(">=notebook") {
     display: grid;
     grid-template-columns: 1fr minmax(auto, 37.5rem) 1fr;
+    padding-bottom: var(--space-1);
   }
 
   @include media("<notebook") {
@@ -63,14 +66,14 @@
 }
 
 .navbar__logo {
-  width: 9.25rem;
-  height: 2.5625rem;
-  min-height: 2.5625rem;
+  width: rem(118px);
+  height: rem(50px);
   padding: 0;
 
-  img {
+  svg {
     width: 100%;
     height: 100%;
+    fill: var(--color-neutral-0);
   }
 }
 
@@ -108,11 +111,16 @@
   a {
     display: block;
     width: 100%;
+    color: var(--color-neutral-0);
   }
 
   @include media(">=notebook") {
+    border-top: var(--border-width-2) solid var(--color-neutral-0);
+    padding: 0 rem(40px);
+
     ul {
       display: flex;
+      justify-content: space-between;
       padding-top: var(--space-1);
       column-gap: var(--space-3);
     }
@@ -124,7 +132,6 @@
   }
 
   @include media("<notebook") {
-    border-top: var(--border-width-0) solid var(--color-neutral-2);
     border-bottom: var(--border-width-0) solid var(--color-neutral-2);
   }
 }

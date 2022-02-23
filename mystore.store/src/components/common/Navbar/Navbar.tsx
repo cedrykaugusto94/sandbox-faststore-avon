@@ -1,4 +1,4 @@
-import { List as UIList } from '@faststore/ui'
+import { Icon as UIIcon, List as UIList } from '@faststore/ui'
 import { Link as LinkGatsby } from 'gatsby'
 import { List as ListIcon, X as XIcon } from 'phosphor-react'
 import React, { useRef, useState } from 'react'
@@ -12,6 +12,7 @@ import { useStoreCollection } from 'src/hooks/useAllCollections'
 import { mark } from 'src/sdk/tests/mark'
 import type { AnchorHTMLAttributes } from 'react'
 
+import { FastStoreIcon } from './Icons'
 import SearchInput from '../SearchInput'
 
 import './navbar.scss'
@@ -47,7 +48,7 @@ function Navbar() {
 
   return (
     <header className="navbar / grid-content-full">
-      <div className="navbar__header / grid-content">
+      <div className="navbar__header">
         <section className="navbar__row">
           <IconButton
             classes="navbar__menu"
@@ -61,7 +62,7 @@ function Navbar() {
             title="Go to Faststore home"
             className="navbar__logo"
           >
-            <Logo />
+            <UIIcon component={<FastStoreIcon />} />
           </LinkGatsby>
           <SearchInput />
           <div className="navbar__buttons">

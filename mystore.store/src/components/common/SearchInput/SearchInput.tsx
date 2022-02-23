@@ -34,7 +34,7 @@ function SearchInput(props: SearchInputProps) {
   return (
     <UISearchInput
       icon={<MagnifyingGlassIcon />}
-      placeholder="Search everything at the store"
+      placeholder="Buscar no site"
       onSubmit={doSearch}
       {...props}
     />

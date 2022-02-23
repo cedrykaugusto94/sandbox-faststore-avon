@@ -6,6 +6,7 @@ import {
 } from '@faststore/ui'
 import { graphql, Link } from 'gatsby'
 import React, { memo, useMemo } from 'react'
+import BuyButton from 'src/components/ui/BuyButton'
 import { Badge, DiscountBadge } from 'src/components/ui/Badge'
 import { Image } from 'src/components/ui/Image'
 import Price from 'src/components/ui/Price'
@@ -125,7 +126,8 @@ function ProductCard({
           <DiscountBadge small listPrice={listPrice} spotPrice={spotPrice} />
         )}
       </UICardContent>
-      {!!buyButton && <UICardActions>{buyButton}</UICardActions>}
+      <BuyButton>Ver detalhes</BuyButton>
+      {/* {!!buyButton && <UICardActions>{buyButton}</UICardActions>} */}
     </UICard>
   )
 }

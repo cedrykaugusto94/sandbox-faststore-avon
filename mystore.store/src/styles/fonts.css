@@ -42,3 +42,5 @@
     url("../fonts/lato-v20-latin-900.ttf") format("truetype"),
     url("../fonts/lato-v20-latin-900.svg#Lato") format("svg"); /* Legacy iOS */
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Overpass:wght@300;400;700&display=swap');

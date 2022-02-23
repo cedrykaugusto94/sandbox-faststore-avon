@@ -63,7 +63,8 @@
     display: -webkit-box;
     display: -moz-box;
     display: box;
-    min-height: 100%;
+    // min-height: 100%;
+    min-height: var(--space-6);
     max-height: var(--space-6);
     padding: 0;
     overflow: hidden;
