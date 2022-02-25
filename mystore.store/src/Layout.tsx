@@ -1,6 +1,7 @@
 import React, { lazy, Suspense } from 'react'
 import Footer from 'src/components/common/Footer'
 import Navbar from 'src/components/common/Navbar'
+import Newsletter from 'src/components/common/Newsletter'
 import Prebar from 'src/components/common/Prebar'
 import Toast from 'src/components/common/Toast'
 import { useUI } from 'src/sdk/ui'
@@ -18,6 +19,7 @@ function Layout({ children }: PropsWithChildren<unknown>) {
 
       <main>{children}</main>
 
+      <Newsletter />
       <Footer />
 
       <Toast />

@@ -24,7 +24,10 @@ const categoryMenu = [
 function IncentivesHeader() {
   return (
     <>
-      <h1>Navegue pelas categorias e escolha seus produtos:</h1>
+      <h1>
+        <strong>Navegue pelas categorias </strong>
+        <br />e escolha seus produtos:
+      </h1>
       <CategoryMenu categoryMenu={categoryMenu} classes="categories--colored" />
     </>
   )

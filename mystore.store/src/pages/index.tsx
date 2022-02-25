@@ -3,10 +3,10 @@ import { graphql } from 'gatsby'
 import { GatsbySeo, JsonLd } from 'gatsby-plugin-next-seo'
 import React from 'react'
 import Banner from 'src/components/sections/Banner'
-import BannerText from 'src/components/sections/BannerText'
+// import BannerText from 'src/components/sections/BannerText'
 import CategoriesHeader from 'src/components/sections/CategoryMenu/categoriesHeader'
 import ProductShelf from 'src/components/sections/ProductShelf'
-import ProductTiles from 'src/components/sections/ProductTiles'
+// import ProductTiles from 'src/components/sections/ProductTiles'
 import { mark } from 'src/sdk/tests/mark'
 import type { PageProps } from 'gatsby'
 import type { HomePageQueryQuery } from '@generated/graphql'
@@ -65,7 +65,7 @@ function Page(props: Props) {
         />
       </section>
 
-      <section className="page__section">
+      <section className="page__section-categories">
         <CategoriesHeader />
       </section>
 

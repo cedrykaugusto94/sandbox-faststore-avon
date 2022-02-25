@@ -13,6 +13,58 @@ main {
   .title-section { margin-bottom: var(--space-3); }
 }
 
+.page__section-categories {
+  width: 100%;
+
+  h1 {
+    text-align: center;
+    font-family: Zona Pro, sans-serif;
+    margin: 60px auto;
+    width: 50%;
+    text-align: center;
+    font-size: 34px;
+    color: #b04aff;
+    line-height: 40px;
+    font-weight: 400;
+  }
+
+  .category__menu {
+    display: flex;
+    justify-content: center;
+
+    ul {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, max-content));
+      grid-gap: rem(10px);
+      text-align: center;
+      max-width: fit-content;
+
+      li {
+        [data-category-menu-content="true"] {
+          background-color: var(--color-purple);
+          min-width: rem(338px);
+          height: rem(72px);
+
+          &:hover {
+            background-color: var(--color-pink);
+          }
+
+          a {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--color-neutral-0);
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: rem(22px);
+          }
+        }
+      }
+    }
+  }
+}
+
 .page__section-shelf {
   .page__section-content {
     min-height: 21.06rem;

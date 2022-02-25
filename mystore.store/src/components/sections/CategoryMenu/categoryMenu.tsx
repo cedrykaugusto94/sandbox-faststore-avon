@@ -15,7 +15,7 @@ interface Props {
 
 function CategoryMenus({ categoryMenu, classes = '' }: Props) {
   return (
-    <div className={`CategoryMenus ${classes} / grid-content-full`}>
+    <div className={`category__menu ${classes} / grid-content-full`}>
       <UIList variant="unordered" className="grid-content">
         {categoryMenu.map((category, index) => (
           <li key={String(index)}>
