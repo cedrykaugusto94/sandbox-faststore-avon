@@ -1,0 +1,64 @@
+@import "src/styles/scaffold";
+
+.preheader-section {
+  width: 100%;
+  padding: rem(10px) rem(36px);
+  background: #000;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__freeShipping {
+    display: flex;
+    align-items: center;
+    gap: rem(20px);
+
+    h3 {
+      font-size: rem(12px);
+      color: #fff;
+    }
+
+    button {
+      background: #fb8cb6;
+      border-radius: rem(4px);
+      border: none;
+      padding: rem(5px) rem(22px);
+      font-size: rem(11px);
+      color: #fff;
+    }
+  }
+
+  &__navItems {
+    ul {
+      display: flex;
+      align-items: center;
+
+      li {
+        &:not(:last-of-type) {
+          margin-right: rem(12px);
+        }
+
+        &:nth-of-type(2),
+          &:nth-of-type(3),
+          &:nth-of-type(4) {
+            a {
+              color: #F06699;
+            }
+          }
+
+        a {
+          font-size: rem(13px);
+          text-decoration: none;
+          color: #fff;
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+}
